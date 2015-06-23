@@ -1,0 +1,293 @@
+<!-- Copyright (c) Art. Lebedev Studio | http://www.artlebedev.ru/ -->
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="/main.css">
+<link rel="stylesheet" type="text/css" href="/travel/travel.css">
+<link rel="stylesheet" type="text/css" href="/travel/city-tabs.css">
+<title>
+Артемий Лебедев. Дом-страница
+</title>
+<title lang="ru">Артемий Лебедев. Дом-страница</title>
+<title lang="en">Artemy Lebedev. Home Page</title>
+<base target="_top">
+<script src="/svalka/jQuery.182.min.js"></script>
+<script src="/svalka/language2.js"></script>
+<script src="/travel/city-tabs.js"></script>
+<script src="/svalka/shortcuts.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="/travel/travel.js"></script>
+<script type="text/javascript" encoding="utf-8" src="//s3-eu-west-1.amazonaws.com/lt.api/2.0-beta/open_api.js"></script>
+<style id="local-default">
+h1[lang="en"]{display:none} p[lang="en"]{display:none} span[lang="en"]{display:none} div[lang="en"]{display:none} h2[lang="en"]{display:none} h3[lang="en"]{display:none} table[lang="en"]{display:none} form[lang="en"]{display:none}
+</style>
+<style id="localization">
+</style>
+<script>
+var LangTranslateFactory ={
+'get_instance' : function(){
+return new LangTranslate('',['ru','en'],{'h1':'inline-block','p':'block','span':'inline','div':'block','h2':'inline-block','h3':'inline-block','table':'table','form':'block'});
+}
+}
+// Инициализируем класс локализации
+LangTranslateFactory.get_instance();
+</script>
+<style>
+.lang-switcher {
+position: relative;
+padding: 0;
+color: #fff;
+width: 110px;
+height: 100%;
+font-size: 85%;
+line-height: 260%;
+margin-right: 22px;
+}
+.lang-switcher:after {
+content:'';
+border-bottom: 6px solid #fff;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+height: 0;
+position: absolute;
+bottom: -2px;
+width: 0;
+}
+.lang-switcher[lang="ru"]:after {
+left: 27px;
+}
+.lang-switcher[lang="en"]:after {
+right: 11px;
+}
+.arrow-index[lang="en"]:after {
+border-bottom-color: #D4A368;
+}
+.arrow-travel-index:after {
+border-bottom-color: #C6C4AD;
+}
+.arrow-beige:after {
+border-bottom-color: #EBEBCF;
+}
+form.search input {
+height: 20px !important;
+}
+.lang-switcher a {
+color: #FFFFFF !important;
+}
+#rss_block a.underline:link {
+border-color: #B2CCF0 !important;
+}
+#rss_block a.underline:hover {
+border-color: #F0B2B2 !important;
+}
+</style>
+<script type="text/javascript">
+var cityCoords = {};
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1013490-8']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link rel="stylesheet" href="/links.css" /></head>
+<body bgcolor="#FFFFFF" text="#000000" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table class="header" width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#000000">
+<tr>
+<td width="50%">
+<span class="breadcrumb" lang="ru">
+<img class="breadcrumb-pic" src="/i/home.gif" alt="" width="11" height="11" border="0" hspace="5" />Дом-страница Артемия Лебедева
+</span>
+<span class="breadcrumb" lang="en">
+<img class="breadcrumb-pic" src="/i/home.gif" alt="" width="11" height="11" border="0" hspace="5" />Home page
+</span>
+</td>
+<td width="33%" align="right">
+<form class="search" name="search" method="get" action="/search/" lang="ru">
+<input type="text" name="text" size="20" value="" maxlength="80" placeholder="поиск" results="10">
+</form>
+<div lang="en" style="height: 20px; padding: 5px">&nbsp;</div>
+</td>
+<td width="15%" align="right">
+<div class="lang-switcher arrow-index" lang="en">
+<a href="/main.html" onclick="LangTranslateFactory.get_instance().switch_lang(); return false;" class="underline">Русский</a>&nbsp;&nbsp;|&nbsp;&nbsp;English
+</div>
+<div class="lang-switcher arrow-white" lang="ru">
+Русский&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/eng/main.html" onclick="LangTranslateFactory.get_instance().switch_lang(); return false;" class="underline">English</a>
+</div>
+</td>
+<td width="2%" align="right">
+</td>
+</tr>
+</table>
+<!-- Ну вот скажи - ну неужели так интересно читать код? Купи себе лучше книгу, что ли... -->
+<!-- So come on, tell me - is reading the code really that interesting? Why don't you go get yourself a book or something instead... -->
+<style>
+body {
+margin-top: 34px;
+}
+.header {
+margin-top: -34px;
+}
+</style>
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign=top>
+<td width="158"><img src="i/home/left.jpg" alt="" width="158" height="721" border="0" /></td>
+<td width="50%">
+<img src="i/home/top.jpg" alt="" width="319" height="106" border="0" /><br />
+<!-- топ-топ, три па поп... -->
+<!-- la-la, laa-dee-daa... -->
+<table width=90%><tr><td>
+<h1 class="main_title" lang="ru">Мой&nbsp;дом&nbsp;&#151; моя&nbsp;слабость</h1>
+<h1 class="main_title" lang="en">There’s no&nbsp;page like home</h1>
+<br />
+<p class="list main_list" lang="ru"> <a href="about/" class="underline">Представляюсь</a></p>
+<p class="list main_list" lang="en"> <a href="about/" class="underline">Preface</a></p>
+<p class="list main_list" lang="ru"> <a href="love/" class="underline">Люблю</a></p>
+<p class="list main_list" lang="en"> <a href="love/" class="underline">I&nbsp;love</a></p>
+<p class="list main_list" lang="ru"> <a href="hate/" class="underline">Ненавижу</a></p>
+<p class="list main_list" lang="en"> <a href="hate/" class="underline">I&nbsp;hate</a></p>
+<p class="list main_list" lang="ru"> <a href="crea-gif/" class="underline">Фигачу</a></p>
+<p class="list main_list" lang="ru"> <a href="use/" class="underline">Использую</a></p>
+<p class="list main_list" lang="en"> <a href="use/" class="underline">I&nbsp;use</a></p>
+<p class="list main_list" lang="ru"> <a href="travel/" class="underline">Путешевствстствую</a> <font size="-1" color="#990000">(добавилось)</font> </p>
+<p class="list main_list" lang="en"> <a href="travel/" class="underline">I&nbsp;travel</a> <font size="-1" color="#990000">(new)</font> </p>
+<!-- Бонус для читателей комментариев:
+<p class="list main_list"> <a href="thoughts_on_business/" class="underline">Размышляю о&nbsp;бизнесе</a></p>
+-->
+<!-- <p class="list main_list"> <!a href="хуй угадаешь/">Занимаюсь</a></p>
+<p class="list main_list"> <!a href="можно не гадать/">Ебу мозги</a></p>
+-->
+<!-- A bonus for comment readers:
+<p class="list main_list"> <a href="thoughts_on_business/" class="underline">I think about business</a></p>
+-->
+</blockquote>
+<br />
+<table cellpadding="7" width="90%"><td bgcolor="#fafaf3">
+<p class="body_smaller" lang="ru">
+<strong>Иде я нахожуся?</strong></p>
+<p class="body_smaller" lang="en">
+<strong>Where the hell am I?</strong></p>
+<br />
+<!--
+<p class="body" lang="ru">
+1...2 пыц &#151; дыц
+</p>
+<p class="body" lang="en">
+1...2 ta &#151; dum
+</p>
+-->
+<p class="body" lang="ru">
+19...26 июня &#151; Франция
+</p>
+<p class="body" lang="en">
+June 19...26 &#151; France
+</p>
+<p class="body" lang="ru">
+28 июня ... 13 июля &#151; Сан-Франциско, Аляска, Бермуды
+</p>
+<p class="body" lang="en">
+June 28 ... July 13 &#151; San Francisco, Alaska, Bermudas
+</p>
+<p class="body" lang="ru">
+июль &#151; Великобритания
+</p>
+<p class="body" lang="en">
+July &#151; Great Britain
+</p>
+<p class="body" lang="ru">
+осень &#151; КитайЭтноЭксп-2
+</p>
+<p class="body" lang="en">
+Fall &#151; ChinaEthnoExp-2
+</p>
+<br />
+</td></tr></table>
+</td></tr></table>
+</td>
+<td width="25%">
+<br /><br />
+<div class="smaller">
+<p class="body" lang="ru"><a href="letters/" class="underline">Как со&nbsp;мной связаться</a></p>
+<p class="body" lang="en"><a href="letters/" class="underline">How to&nbsp;contact me</a></p>
+<!--p class="body" lang="ru"><a href="gb/" class="underline">О&nbsp;гостевых книгах</a></p-->
+<!--p class="body" lang="en"><a href="gb/" class="underline">About guestbooks</a></p-->
+<p class="body" lang="ru"><a href="proof/" class="underline">Как узнать, что это&nbsp;я</a></p>
+<p class="body" lang="en"><a href="proof/" class="underline">How to&nbsp;know if&nbsp;it’s really me</a></p>
+<p class="body" lang="ru"><a href="j/" class="underline">Что делать, если вы&nbsp;журналист</a></p>
+<!--p class="body" lang="en"><a href="j/" class="underline">What to&nbsp;do&nbsp;if&nbsp;you’re a&nbsp;journalist</a></p-->
+<br />
+<hr noshade="noshade" size="1" color="#cccccc" />
+<p class="body" lang="ru"><strong>Где-то же я должен работать</strong></p>
+<p class="body" lang="en"><strong>I’ve got to&nbsp;work somewhere</strong></p>
+<p class="body" lang="ru"><a href="http://www.artlebedev.ru/" class="underline">Студия Артемия Лебедева</a></p>
+<p class="body" lang="en"><a href="http://www.artlebedev.com/" class="underline">Art. Lebedev Studio</a></p>
+<br />
+<hr noshade="noshade" size="1" color="#cccccc" />
+<p class="body" lang="ru"><strong>Почитать про дизайн</strong></p>
+<p class="body" lang="en"><strong>Design reading</strong></p>
+<p class="body" lang="ru">&laquo;Ководство&raquo;: бесплатно <a href="http://www.artlebedev.ru/kovodstvo/" class="underline">в&nbsp;онлайне</a>, за&nbsp;деньги <a href="http://store.artlebedev.ru/books/design/theory/kovodstvo4/" class="underline">в&nbsp;виде книги</a></p>
+<p class="body" lang="en"><a href="http://www.artlebedev.com/mandership/" class="underline">Mandership</a></p>
+<br />
+<div lang="ru"><hr noshade="noshade" size="1" color="#cccccc" lang="ru" /></div>
+<p class="body" lang="ru"><strong>Бложе мой</strong></p>
+<!--p class="body" lang="en"><strong>Oh&nbsp;my&nbsp;blog</strong></p-->
+<p class="body" lang="ru"><a href="http://tema.livejournal.com/" class="underline">ЖЖ ЖЖ ЖЖ</a></p>
+<p class="body" lang="ru"><a href="https://www.facebook.com/temalebedev" class="underline">ФБ ФБ ФБ</a><br /><br /></p>
+<!--p class="body" lang="en"><a href="http://tema.livejournal.com/" class="underline">Live from my&nbsp;journal</a></p-->
+<hr noshade="noshade" size="1" color="#cccccc" />
+<p class="body" lang="ru"><strong>Волнующие меня проекты</strong></p>
+<p class="body" lang="en"><strong>Projects I&nbsp;care about</strong></p>
+<p class="body" lang="ru"><a href="http://www.collectionerus.ru/" class="underline">Коллекционерус</a></p>
+<p class="body" lang="en"><a href="http://www.collectionerus.ru/" class="underline">Collectionerus</a></p>
+<p class="body" lang="ru"><a href="http://www.metro.ru/" class="underline">Московское метро</a></p>
+<p class="body" lang="en"><a href="http://www.metro.ru/" class="underline">The Moscow Metro</a></p>
+<p class="body" lang="ru"><a href="http://www.artlebedev.ru/everything/izdal/" class="underline">ИЗДАЛ</a></p>
+<p class="body" lang="en"><a href="http://www.artlebedev.com/everything/optimus/" class="underline">Optimus keyboards</a></p>
+<p class="body" lang="ru">В&nbsp;разработке: &laquo;Банальности&raquo;</p>
+<!--p class="body" lang="en">Under development: <em>Platitudes</em></p-->
+<br />
+<hr noshade="noshade" size="1" color="#cccccc" />
+<p class="body" lang="ru"><strong>Частные объявления</strong></p>
+<p class="body" lang="en"><strong>Classified ads</strong></p>
+<p class="body" lang="ru">Сеткин, сука, верни долг!</p>
+<p class="body" lang="en">Setkin, you still owe me&nbsp;money, you jerk!</p>
+<p class="body" lang="ru"><a href="start/" class="underline">Дешевые авиабилеты и&nbsp;гостиницы</a></p>
+<p class="body" lang="en"><a href="start/" class="underline">Cheap flights and hotels</a></p>
+<br />
+</div>
+</td>
+<td align="right"><img src="i/home/mainside2.jpg" alt="" width="96" height="600" border="0" /></td>
+</tr>
+<tr><td colspan="4" valign="bottom">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<!-- Слушай, а давай я тебя HTML писать научу? Это мы только что открыли таблицу. Ширина у нее - пока не треснет браузер. Края не видны. А все остальное - по нулям. Понимаешь? Давай, теперь сама. -->
+<!-- Hey listen, how about I teach you how to code in HTML? In the line above, we just began a table. Its width is basically as much as the browser can handle. You can’t see the edges. And everything else is set to zero. Got it? Ok, now you try. -->
+<tr>
+<td>
+<table width="90%" align="right">
+<tr>
+<td>
+<p class="body_smaller" style="font-size: smaller" lang="ru">Сайт работает до последнего посетителя.<br /><br />
+&copy; 1995&#150;2015 Артемий Лебедев<br>
+Электропочта: <a href=mailto:tema@tema.ru class="underline">tema@tema.ru</a></p>
+<p class="body_smaller" style="font-size: smaller" lang="en">Translated from the Russian by&nbsp;Anna Kadysheva.</p>
+<p class="body_smaller" style="font-size: smaller" lang="en">Free cookie for every visitor.<br /><br />
+&copy; 1995&#151;2015 Artemy Lebedev<br>
+Electromail: <a href=mailto:tema@tema.ru class="underline">tema@tema.ru</a></p>
+</td>
+</tr>
+</table>
+</td>	<td align="right">
+<img src="i/home/bueeee.jpg" alt="" width="650" height="176" border="0" />
+</td>
+</tr>
+</table>
+</td></tr></table>
+</body></html>
+<!-- ...шли годы... а он все читал и читал исходник... -->
+<!-- ...the years went by... and he still sat there, reading the source code... -->
